@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiService {
-  static const String baseUrl = 'http://192.168.19.215:5000/api '; // Use your IP for emulator
+  static const String baseUrl = 'https://pomodoro-backend-ssse.onrender.com '; // Use your IP for emulator
   
   Future<Map<String, String>> _getHeaders() async {
     final prefs = await SharedPreferences.getInstance();
